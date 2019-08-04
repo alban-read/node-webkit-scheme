@@ -1,0 +1,181 @@
+﻿html,
+body {
+    height: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding:1px;
+    margin: 0;
+    background-color: #7F8E99;
+    background-image: url("woven.png");
+    overflow: auto;
+}
+
+
+
+#webview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+  }
+
+.textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.CodeMirror-line-numbers {
+    width: 2.2em;
+    color: #aaa;
+    background-color: #eee;
+    text-align: right;
+    padding-right: .3em;
+    font-size: 10pt;
+    font-family: monospace;
+    padding-top: .4em;
+    line-height: normal;
+}
+
+.codemirror {
+    width: 99%;
+    height: 99%;
+    background-color: #F5F6E4;
+    box-shadow: 4px 4px 3px grey;
+}
+
+.page-container {
+    margin: 2px;
+    height: 97%;
+}
+
+body {
+    background: rgba(178, 193, 204, 0.226);
+}
+
+/* horizontal panel*/
+
+.panel-container {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    width: 98%;
+    height: 98%;
+}
+
+.panel-left {
+    flex: 0 0 auto;
+    /* only manually resize */
+    padding: 1px;
+    width: 50%;
+    min-height: 100px;
+    white-space: nowrap;
+    color: white;
+}
+
+.splitter {
+    flex: 0 0 auto;
+    width: 6px;
+    overflow: hidden;
+    cursor: col-resize;
+    padding: 0px;
+}
+
+.panel-right {
+    flex: 1 1 auto;
+    padding: 1px;
+    min-height: 50px;
+    color: white;
+}
+
+.panel-top-right {
+    flex: 1 1 auto;
+    padding: 1px;
+    color: white;
+    width: 100%;
+    height: 98%;
+    overflow: hidden;
+}
+
+.panel-top-left {
+    flex: 1 1 auto;
+    padding: 1px;
+    color: white;
+    width: 100%;
+    height: 98%;
+    overflow: hidden;
+}
+
+
+
+/* vertical panel */
+
+.panel-container-vertical {
+    display: flex;
+    flex-direction: column;
+    height: 98%;
+    overflow: hidden;
+}
+
+iframe {
+    flex: 0 0 auto;
+    padding:1px;
+    border: 0px;
+}
+
+.panel-top {
+    flex: 0 0 auto;
+    padding:1px;
+    min-height: 100px;
+    height: 60%;
+    width: 98%;
+    white-space: nowrap;
+    color: white;
+}
+
+.splitter-horizontal {
+    flex: 0 0 auto;
+    height: 4px;
+    cursor: row-resize;
+}
+
+.panel-bottom {
+    flex: 1 1 auto;
+    padding:1px;
+    height: 30%;
+    width: 100%;
+
+}
+
+.panel-bottom-right{
+    flex: 1 1 auto;
+    padding: 1px;
+	overflow: hidden;
+}
+
+
+
+textarea {
+    width: 100%;
+}
+
+.textarea {
+    overflow: auto;
+}
+
+.container img {
+    width: 100%;
+}
+
+#canvas {
+    width: 100%;
+    margin: 10px;
+    padding:1px;
+    display: block;
+}
+
+
+ #documentation { 
+  width: 100%; height: 98%; 
+
+ }
